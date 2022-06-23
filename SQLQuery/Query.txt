@@ -1,1 +1,8 @@
-﻿
+SELECT Product, Category
+FROM products LEFT JOIN categories 
+ON products.CategoryId = categories.Id
+
+Две таблицы - products, categories. Выбираем 
+Product, Category(можно так - products.Product, categories.Category) 
+и выводим все строки из левой(первой) таблицы, по условию 
+products.CategoryId = categories.Id.
